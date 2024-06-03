@@ -1,0 +1,73 @@
+/* authLinks.module.css */
+.link {
+  text-decoration: none;
+  padding: 10px;
+}
+
+.burger {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30px;
+  height: 30px;
+  border: none;
+  z-index: 10;
+}
+
+.line {
+  width: 100%;
+  height: 3px;
+  background-color: #333;
+  transition: all 0.3s ease;
+}
+
+.burger:hover .line {
+  background: #555;
+}
+
+.burger.open .line:nth-child(1) {
+  transform: rotate(45deg);
+  position: relative;
+  top: 8px;
+}
+
+.burger.open .line:nth-child(2) {
+  opacity: 0;
+}
+
+.burger.open .line:nth-child(3) {
+  transform: rotate(-45deg);
+  position: relative;
+  bottom: 8px;
+}
+
+.responsiveMenu {
+  position: fixed;
+  top: 50%;
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  background-color: #fff; 
+  border-radius: 10px; 
+  padding: 40px; /* Reduced padding for a more compact look */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8); 
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.responsiveMenu a {
+  display: block;
+  color: #333;
+  text-decoration: none;
+  text-align: center;
+  width: 100%;
+  padding: 15px 0;
+  font-size: 20px;
+  transition: background 0.3s ease;
+}
+
+.responsiveMenu a:hover {
+  background: #f0f0f0;
+}

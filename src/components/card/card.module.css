@@ -1,0 +1,55 @@
+.container {
+  margin-bottom: 30px; /* Reduced margin bottom */
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Reduced gap */
+}
+
+.imageContainer {
+  display: flex; /* Use flexbox */
+  justify-content: center; /* Align children horizontally (image) to center */
+  align-items: center; /* Align children vertically (image) to center */
+  flex: 1;
+  height: 250px; /* Reduced height */
+  position: relative;
+  overflow: hidden;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.textContainer {
+  flex: 1;
+  flex-direction: column;
+  gap: 10px; /* Reduced gap */
+}
+
+.date {
+  color: gray;
+}
+
+.category {
+  color: crimson;
+  font-weight: 500;
+}
+
+.desc {
+  font-size: 16px; /* Reduced font size */
+  font-weight: 300;
+  color: var(--softTextColor);
+}
+
+.link {
+  border-bottom: 1px solid crimson;
+  width: max-content;
+  padding: 2px 0px;
+}
+
+@media screen and (max-width: 1280px) {
+  .imageContainer {
+    display: none;
+  }
+}
