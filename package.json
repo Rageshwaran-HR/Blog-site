@@ -47,9 +47,5 @@
   "devDependencies": {
     "gh-pages": "^6.1.1"
   },
-<<<<<<< HEAD
   "homepage": "https://rageshwaran-hr.github.io/"
-=======
-    "homepage": "https://rageshwaran-hr.github.io/"
->>>>>>> 4bc362b8734452ca6b9257d65cf4808eac9c10e3
 }
