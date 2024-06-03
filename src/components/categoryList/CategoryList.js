@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { collection, getDocs } from "firebase/firestore"; // Import Firestore functions
 import { db } from "../../App"; // Import your Firebase app instance
 import styles from "./categoryList.module.css";
+import { Link } from "react-router-dom";
 
 const getRandomColor = () => {
   const colors = [
@@ -58,8 +59,8 @@ const CategoryList = () => {
       <h1 className={styles.title}>Popular Categories</h1>
       <div className={styles.categories}>
         {categories.map((category) => (
-          <a
-            href={`/blog?cat=${category.slug}`}
+          <Link
+            to={`/blog?cat=${category.slug}`}
             className={styles.category}
             key={category.id}
             style={{ backgroundColor: category.color }}
@@ -74,7 +75,7 @@ const CategoryList = () => {
               />
             )}
             {category.title}
-          </a>
+          </Link>
         ))}
       </div>
     </div>

@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./card.module.css";
+import { Link } from "react-router-dom";
 
 const Card = ({ item }) => {
   return (
@@ -22,9 +23,9 @@ const Card = ({ item }) => {
         </div>
         {item.title && (
           <div>
-            <a href={`/posts/${item.slug}`}>
+            <Link to={`/posts/${item.slug}`}>
               <h1>{item.title}</h1>
-            </a>
+            </Link>
           </div>
         )}
         {item.desc && (
@@ -33,11 +34,9 @@ const Card = ({ item }) => {
             dangerouslySetInnerHTML={{ __html: item?.desc?.substring(0, 60) }}
           />
         )}
-        {item.title && (
-          <a href={`/posts/${item.slug}`} className={styles.link}>
-            Read More
-          </a>
-        )}
+        <Link to={`/posts/${item.slug}`} className={styles.link}>
+          Read More
+        </Link>
       </div>
     </div>
   );

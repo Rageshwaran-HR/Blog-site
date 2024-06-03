@@ -1,0 +1,48 @@
+[debug] [2024-06-03T17:26:37.187Z] ----------------------------------------------------------------------
+[debug] [2024-06-03T17:26:37.201Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\rages\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-06-03T17:26:37.201Z] CLI Version:   13.10.2
+[debug] [2024-06-03T17:26:37.201Z] Platform:      win32
+[debug] [2024-06-03T17:26:37.201Z] Node Version:  v20.10.0
+[debug] [2024-06-03T17:26:37.202Z] Time:          Mon Jun 03 2024 22:56:37 GMT+0530 (India Standard Time)
+[debug] [2024-06-03T17:26:37.202Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-06-03T17:26:37.209Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-06-03T17:26:37.210Z] > authorizing via signed-in user (rageshwaranhr@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\altrusty\blog\blog
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-06-03T17:26:45.050Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2024-06-03T17:26:46.066Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2024-06-03T17:26:46.067Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project xpert-939a7 (Xpert) 
+[info] 
+=== Database Setup
+[info] i  database: ensuring required API firebasedatabase.googleapis.com is enabled... 
+[debug] [2024-06-03T17:26:49.775Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/xpert-939a7/services/firebasedatabase.googleapis.com [none]
+[debug] [2024-06-03T17:26:49.775Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/xpert-939a7/services/firebasedatabase.googleapis.com x-goog-quota-user=projects/xpert-939a7
+[debug] [2024-06-03T17:26:52.150Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/xpert-939a7/services/firebasedatabase.googleapis.com 200
+[debug] [2024-06-03T17:26:52.151Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/xpert-939a7/services/firebasedatabase.googleapis.com [omitted]
+[info] +  database: required API firebasedatabase.googleapis.com is enabled 
+[info] 
+[debug] [2024-06-03T17:26:52.152Z] >>> [apiv2][query] GET https://firebasedatabase.googleapis.com/v1beta/projects/xpert-939a7/locations/-/instances/xpert-939a7-default-rtdb [none]
+[debug] [2024-06-03T17:26:54.251Z] <<< [apiv2][status] GET https://firebasedatabase.googleapis.com/v1beta/projects/xpert-939a7/locations/-/instances/xpert-939a7-default-rtdb 200
+[debug] [2024-06-03T17:26:54.251Z] <<< [apiv2][body] GET https://firebasedatabase.googleapis.com/v1beta/projects/xpert-939a7/locations/-/instances/xpert-939a7-default-rtdb {"name":"projects/583459737970/locations/asia-southeast1/instances/xpert-939a7-default-rtdb","project":"projects/583459737970","databaseUrl":"https://xpert-939a7-default-rtdb.asia-southeast1.firebasedatabase.app","type":"DEFAULT_DATABASE","state":"ACTIVE"}
+[info] 
+[info] Firebase Realtime Database Security Rules allow you to define how your data should be
+[info] structured and when your data can be read from and written to.
+[info] 

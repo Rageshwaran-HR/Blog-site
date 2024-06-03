@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { collection, getDocs } from "firebase/firestore";
 import { db } from "../../App"; // Adjust the path as needed
 import styles from "./menuCategories.module.css";
+import { Link } from "react-router-dom";
 
 const MenuCategories = () => {
   const [categories, setCategories] = useState([]);
@@ -60,14 +61,13 @@ const MenuCategories = () => {
   return (
     <div className={styles.categoryList}>
       {categories.map((category, index) => (
-        <a
-          key={category.id}
-          href={`/blog?cat=${category.slug}`} // Using href for navigation
+        <Link
+          to={`/blog?cat=${category.slug}`}
           className={styles.categoryItem}
           style={{ backgroundColor: colors[index % colors.length] }}
         >
           {category.title}
-        </a>
+        </Link>
       ))}
     </div>
   );
