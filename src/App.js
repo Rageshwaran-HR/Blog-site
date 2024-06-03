@@ -43,7 +43,7 @@ function App() {
                 <Route path="/login" element={<LoginPage />} />
                 <Route path="/write" element={<Write />} />
                 <Route path="/posts/:id" element={<SinglePage />} />
-                <Route path="/Blog-site/" element={<Home />} />
+                <Route path="/" element={<Home />} />
               </Routes>
               <Footer />
             </div>
