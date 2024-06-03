@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.1720a63f.css",
-    "main.js": "/static/js/main.1282c315.js",
-    "static/media/OIP.jpg": "/static/media/OIP.92cd11d98b6adc6cf018.jpg",
-    "index.html": "/index.html",
-    "main.1720a63f.css.map": "/static/css/main.1720a63f.css.map",
-    "main.1282c315.js.map": "/static/js/main.1282c315.js.map"
+    "main.css": "/Rageshwaran-HR/Blog-site/static/css/main.1720a63f.css",
+    "main.js": "/Rageshwaran-HR/Blog-site/static/js/main.6c0762d4.js",
+    "static/media/OIP.jpg": "/Rageshwaran-HR/Blog-site/static/media/OIP.92cd11d98b6adc6cf018.jpg",
+    "index.html": "/Rageshwaran-HR/Blog-site/index.html",
+    "main.1720a63f.css.map": "/Rageshwaran-HR/Blog-site/static/css/main.1720a63f.css.map",
+    "main.6c0762d4.js.map": "/Rageshwaran-HR/Blog-site/static/js/main.6c0762d4.js.map"
   },
   "entrypoints": [
     "static/css/main.1720a63f.css",
-    "static/js/main.1282c315.js"
+    "static/js/main.6c0762d4.js"
   ]
 }
