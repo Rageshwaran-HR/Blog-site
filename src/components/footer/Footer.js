@@ -20,7 +20,7 @@ const Footer = () => {
           the world. Lamablog is your go-to source for the latest trends,
           innovations, and success stories in the startup ecosystem. Join us to
           explore the journeys of entrepreneurs and learn from their
-          experiences.
+          experiences. To know more about us.
         </p>
         <div className={styles.icons}>
           <img src={facebook} alt="Facebook" width={18} height={18} />
